@@ -69,7 +69,7 @@ $$2c^2 = 3^2$$
 This is a contradiction as both a and b were assumed to be relatively prime.  Thus $\sqrt{6}$ is irrational.
 
 #### Part B
-
+ 
 #### _Where does the proof of Theorem 1.1.1 break down if we try to use it to prove $\sqrt{4}$ is irrational?_
 
 Assume $\sqrt{4}$ is rational.  If $\sqrt{4}$ is rational, then it can be written as a ratio of two relatively prime natural numbers, a and b, such that:
@@ -106,13 +106,67 @@ From theorem 1.1.1 we should able to rewrite $b^2$ at this point in a way that b
 
 ### Original Solution
 
+#### _Let $f(x) = x^2, A = [0,2], B = [1,4]$_
+
 #### Part A
+#### _Find $f(A)$ and $f(B)$.  Does $f(A \bigcap B) = f(A) \bigcap f(B)?$  Does $f(A \bigcup B) = f(A) \bigcup f(B)?$_
+
+$$f(A) = f([0,2])$$
+$$f(A) = [0, 4]$$
+---
+$$f(B) = f([1,4])$$
+$$f(B) = [1,16]$$
+---
+$$f(A \bigcap B) = f([0,2] \bigcap [1,4])$$
+$$f(A \bigcap B) = f([1,2])$$
+$$f(A \bigcap B) = [1,4]$$
+---
+$$f(A) \bigcap f(B) = f([0,2]) \bigcap f([1,4])$$
+$$f(A) \bigcap f(B) = [0,4] \bigcap [1,16]$$
+$$f(A) \bigcap f(B) = [1,4] = f(A \bigcap B)$$
+---
+$$f(A) \bigcup f(B) = f([0,2]) \bigcup f([1,4])$$
+$$f(A \bigcup B) = f([0,4])$$
+$$f(A \bigcup B) = [0,16]$$
+---
+$$f(A) \bigcup f(B) = f([0,2]) \bigcup f([1,4])$$
+$$f(A) \bigcup f(B) = [0,4] \bigcup [1,16]$$
+$$f(A) \bigcup f(B) = [0,16] = f(A \bigcup B)$$
 
 #### Part B
+#### _Find two sets, $A$ and $B$ for which $f(A \bigcap B) \neq f(A) \bigcap f(B)$_
+
+Let $A = [-1, 0], B = [0,1]$
+
+$$f(A \bigcap B) = f([-1,0] \bigcap [0,1])$$
+$$f(A \bigcap B) = f([0])$$
+$$f(A \bigcap B) = 0$$
+---
+$$f(A) \bigcap f(B) = f([-1,0]) \bigcap f([0,1])$$
+$$f(A) \bigcap f(B) = [0,1] \bigcap [0,1]$$
+$$f(A) \bigcap f(B) = [0,1] \neq f(A \bigcap B)$$
 
 #### Part C
+#### _Show that, for an arbitrary function $g : R -> R$ it is always true that $g(A \bigcap B) \subseteq g(A) \bigcap g(B)$ for all sets $A, B \subseteq R$_
+
+Let $x \in A \bigcap B$ this then implies
+
+$$g(x) \in g(A) \bigcap g(B)$$
+
+The next step in the justification process I struggled with some, as I could not find a good way to justify why $g(A \bigcap B) \subseteq g(A) \bigcap g(B)$ other than the fact it is obvious given the above relationship.
 
 #### Part D
+#### _Form and prove a conjecture about the relationship between $g(A \bigcup B) \textrm{ and } g(A) \bigcup g(B)$ for an arbitrary function $g$_
+
+My conjecture is that $g(A \bigcup B) = g(A) \bigcup g(B)$
+
+My intuition about this comes from a background in boolean logic.  My first inclination was to try and prove this with a truth table, but I could not make it generic enough for this process.
+
+Let $x \in A \bigcup B$ this then implies
+
+$$g(x) \in g(A \bigcup B) = g(A \bigcup B)$$
+
+Again I somewhat struggled with the last step of this process as I could not find a clear way to communicate the equality of this relationship other than the fact that I feel it is intuitively obvious.
 
 ### Self-Evaluation
 
@@ -153,8 +207,6 @@ The mapping is onto, in that all of B is represented.  However it is not 1-1. Fo
 
 #### Part C
 #### _$f : N -> Z \textrm{ that is 1-1 and onto}$_
-
-The request is impossible because
 
 ### Self-Evaluation
 
