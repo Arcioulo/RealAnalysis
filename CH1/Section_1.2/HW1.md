@@ -120,7 +120,30 @@ From theorem 1.1.1 we should able to rewrite $b^2$ at this point in a way that b
 
 ## Problem 1.2.11
 
+Form the logical negation of each claim.  In each case, make an intuitive guess as to wether the claim or its negation is the true statement.
+
 ### Original Solution
+
+#### Part A  
+#### _For all real numbers satisfying $a<b$, there exists an $n \in N$ such that $a + \frac{1}{n} < b$_
+
+There exists real numbers $a<b$ such that for all $n \in N a + \frac{1}{n} \geq b$
+
+...
+
+#### Part B
+#### _There exists a real number $x>0$ such that $x<1/n$ for all $n \in N$_
+
+For all real numbers, $x>0$, there exists an n ($n \in N$) such that $x \geq \frac{1}{n}$
+
+...
+
+#### Part C
+#### _Between every two distinct real numbers there is a rational number_
+
+Between every two distinct real numbers, there is not a rational number.
+
+...
 
 ### Self-Evaluation
 
