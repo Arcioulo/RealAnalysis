@@ -125,11 +125,36 @@ From theorem 1.1.1 we should able to rewrite $b^2$ at this point in a way that b
 #### Part A
 #### _$f : N -> N \textrm{ that is 1-1 but not onto}$_
 
+Let $f(x) = 2(x)+1$
+
+then
+
+$$f(1) = 3$$
+$$f(2) = 5$$
+$$...$$
+
+so the mapping is 1-1, in that it maps every element uniquely, but not all of B is represented, i.e. there are no even numbers in the mapping.
+
 #### Part B
 #### _$f : N -> N \textrm{ that is onto but not 1-1}$_
 
+Let
+
+$$
+f(x) = \left\{
+        \begin{array}{ll}
+            x & \quad x < 5 \\
+            x-5 & \quad x \geq 5
+        \end{array}
+    \right.
+$$
+
+The mapping is onto, in that all of B is represented.  However it is not 1-1. For example $f(6) = f(1)$.
+
 #### Part C
 #### _$f : N -> Z \textrm{ that is 1-1 and onto}$_
+
+The request is impossible because
 
 ### Self-Evaluation
 
