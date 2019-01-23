@@ -100,11 +100,15 @@ From theorem 1.1.1 we should able to rewrite $b^2$ at this point in a way that b
 
 ### Self-Evaluation
 
+---
+
 ## Problem 1.2.7
 
 ### Original Solution
 
 ### Self-Evaluation
+
+---
 
 ## Problem 1.2.8
 
@@ -112,16 +116,56 @@ From theorem 1.1.1 we should able to rewrite $b^2$ at this point in a way that b
 
 ### Self-Evaluation
 
+---
+
 ## Problem 1.2.11
 
 ### Original Solution
 
 ### Self-Evaluation
 
+---
+
 ## Problem 1.2.12
+
+Let $y_1 = 6$ and for each $n \in N$ define $Y_{n+1} = \frac{(2y_n-6)}{3}$
 
 ### Original Solution
 
+#### Part A
+
+#### _Use induction to prove that the sequence satisfies $y_n > -6$ for all $n \in N$_
+
+For $n=1$ 
+
+$$y_1 = 6 > -6$$
+
+> The induction is grounded
+
+Suppose $y_n > -6$
+
+$$y_{n+1} = \frac{2y_n-6}{3} > \frac{2(-6)-6}{3} = -6$$
+
+#### Part B
+
+#### _Use another induction argument to show the sequence is decreasing_
+
+For $n=1$
+
+$$y_2 = \frac{2(y_1)-6}{3} = \frac{2(6)-6}{3} = 2 < 6$$
+
+> The induction is grounded
+
+For $y_{n+1} < y_n$
+
+$$2y_{n+1} < 2y_n$$
+$$2y_{n+1} - 6 < 2y_n - 6$$
+$$\frac{2y_{n+1} - 6}{3} < \frac{2y_n - 6}{3}$$
+
+It then follows that $y_{n+2} < y_{n+1}$, etc.
+
 ### Self-Evaluation
+
+---
 
 ## External References
