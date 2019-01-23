@@ -106,6 +106,14 @@ From theorem 1.1.1 we should able to rewrite $b^2$ at this point in a way that b
 
 ### Original Solution
 
+#### Part A
+
+#### Part B
+
+#### Part C
+
+#### Part D
+
 ### Self-Evaluation
 
 ---
@@ -113,6 +121,15 @@ From theorem 1.1.1 we should able to rewrite $b^2$ at this point in a way that b
 ## Problem 1.2.8
 
 ### Original Solution
+
+#### Part A
+#### _$f : N -> N \textrm{ that is 1-1 but not onto}$_
+
+#### Part B
+#### _$f : N -> N \textrm{ that is onto but not 1-1}$_
+
+#### Part C
+#### _$f : N -> Z \textrm{ that is 1-1 and onto}$_
 
 ### Self-Evaluation
 
@@ -129,21 +146,21 @@ Form the logical negation of each claim.  In each case, make an intuitive guess 
 
 There exists real numbers $a<b$ such that for all $n \in N a + \frac{1}{n} \geq b$
 
-...
+The negated statement falls apart when trying to prove the statement holds *for all* $n$.  For example if we let $a = 1, b = 2, \textrm{ and } n = 10$, the negated statement is false (for all $n>1$).  Conversely, $n$ can always be chosen in such a way that the original statement is true, regardless of the values for $a$ and $b$.
 
 #### Part B
 #### _There exists a real number $x>0$ such that $x<1/n$ for all $n \in N$_
 
 For all real numbers, $x>0$, there exists an n ($n \in N$) such that $x \geq \frac{1}{n}$
 
-...
+I would hypothesize that the orignal statement is correct.  The negated statement does not hold across $R$ for all possible $x$.  For example if $x = 0.1, \textrm{ and } n = 1$  the orignal statement would hold, for all $n$, while the negated statement does not.
 
 #### Part C
 #### _Between every two distinct real numbers there is a rational number_
 
 Between every two distinct real numbers, there is not a rational number.
 
-...
+The original statement is correct.  $R$ exists as an extension of $Q$.  As the book describes it, $R$ "fills in the gaps" left behind by $Q$.  While these "gaps" may not be as literal as I am assuming, the expression helps visualize how the two sets coexist, which leads me to my conclusion.
 
 ### Self-Evaluation
 
