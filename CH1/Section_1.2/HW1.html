@@ -1,3 +1,6 @@
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
 <h1 id="homework-1">Homework 1</h1>
 <p>Mark Archual | MTH 515</p>
 <p>Dr. Scott | Real Analysis</p>
@@ -49,36 +52,81 @@
 <p><span class="math display">\[c^2 = b^2\]</span></p>
 <p>From theorem 1.1.1 we should able to rewrite <span class="math inline">\(b^2\)</span> at this point in a way that breaks the assumption that b is relatively prime. However, this is not the case and thus we can assume that <span class="math inline">\(\sqrt{4}\)</span> is rational.</p>
 <h3 id="self-evaluation">Self-Evaluation</h3>
+<p><br> <br> <br> <br> <br></p>
 <hr />
 <h2 id="problem-1.2.7">Problem 1.2.7</h2>
 <h3 id="original-solution-1">Original Solution</h3>
+<h4 id="let-fx-x2-a-02-b-14"><em>Let <span class="math inline">\(f(x) = x^2, A = [0,2], B = [1,4]\)</span></em></h4>
+<h4 id="part-a-1">Part A</h4>
+<h4 id="find-fa-and-fb.-does-fa-bigcap-b-fa-bigcap-fb-does-fa-bigcup-b-fa-bigcup-fb"><em>Find <span class="math inline">\(f(A)\)</span> and <span class="math inline">\(f(B)\)</span>. Does <span class="math inline">\(f(A \bigcap B) = f(A) \bigcap f(B)?\)</span> Does <span class="math inline">\(f(A \bigcup B) = f(A) \bigcup f(B)?\)</span></em></h4>
+<p><span class="math display">\[f(A) = f([0,2])\]</span> <span class="math display">\[f(A) = [0, 4]\]</span> — <span class="math display">\[f(B) = f([1,4])\]</span> <span class="math display">\[f(B) = [1,16]\]</span> — <span class="math display">\[f(A \bigcap B) = f([0,2] \bigcap [1,4])\]</span> <span class="math display">\[f(A \bigcap B) = f([1,2])\]</span> <span class="math display">\[f(A \bigcap B) = [1,4]\]</span> — <span class="math display">\[f(A) \bigcap f(B) = f([0,2]) \bigcap f([1,4])\]</span> <span class="math display">\[f(A) \bigcap f(B) = [0,4] \bigcap [1,16]\]</span> <span class="math display">\[f(A) \bigcap f(B) = [1,4] = f(A \bigcap B)\]</span> — <span class="math display">\[f(A) \bigcup f(B) = f([0,2]) \bigcup f([1,4])\]</span> <span class="math display">\[f(A \bigcup B) = f([0,4])\]</span> <span class="math display">\[f(A \bigcup B) = [0,16]\]</span> — <span class="math display">\[f(A) \bigcup f(B) = f([0,2]) \bigcup f([1,4])\]</span> <span class="math display">\[f(A) \bigcup f(B) = [0,4] \bigcup [1,16]\]</span> <span class="math display">\[f(A) \bigcup f(B) = [0,16] = f(A \bigcup B)\]</span></p>
+<h4 id="part-b-1">Part B</h4>
+<h4 id="find-two-sets-a-and-b-for-which-fa-bigcap-b-neq-fa-bigcap-fb"><em>Find two sets, <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> for which <span class="math inline">\(f(A \bigcap B) \neq f(A) \bigcap f(B)\)</span></em></h4>
+<p>Let <span class="math inline">\(A = [-1, 0], B = [0,1]\)</span></p>
+<p><span class="math display">\[f(A \bigcap B) = f([-1,0] \bigcap [0,1])\]</span> <span class="math display">\[f(A \bigcap B) = f([0])\]</span> <span class="math display">\[f(A \bigcap B) = 0\]</span> — <span class="math display">\[f(A) \bigcap f(B) = f([-1,0]) \bigcap f([0,1])\]</span> <span class="math display">\[f(A) \bigcap f(B) = [0,1] \bigcap [0,1]\]</span> <span class="math display">\[f(A) \bigcap f(B) = [0,1] \neq f(A \bigcap B)\]</span></p>
+<h4 id="part-c">Part C</h4>
+<h4 id="show-that-for-an-arbitrary-function-g-r---r-it-is-always-true-that-ga-bigcap-b-subseteq-ga-bigcap-gb-for-all-sets-a-b-subseteq-r"><em>Show that, for an arbitrary function <span class="math inline">\(g : R -&gt; R\)</span> it is always true that <span class="math inline">\(g(A \bigcap B) \subseteq g(A) \bigcap g(B)\)</span> for all sets <span class="math inline">\(A, B \subseteq R\)</span></em></h4>
+<p>Let <span class="math inline">\(x \in A \bigcap B\)</span> this then implies</p>
+<p><span class="math display">\[g(x) \in g(A) \bigcap g(B)\]</span></p>
+<p>The next step in the justification process I struggled with some, as I could not find a good way to justify why <span class="math inline">\(g(A \bigcap B) \subseteq g(A) \bigcap g(B)\)</span> other than the fact it is obvious given the above relationship.</p>
+<h4 id="part-d">Part D</h4>
+<h4 id="form-and-prove-a-conjecture-about-the-relationship-between-ga-bigcup-b-textrm-and-ga-bigcup-gb-for-an-arbitrary-function-g"><em>Form and prove a conjecture about the relationship between <span class="math inline">\(g(A \bigcup B) \textrm{ and } g(A) \bigcup g(B)\)</span> for an arbitrary function <span class="math inline">\(g\)</span></em></h4>
+<p>My conjecture is that <span class="math inline">\(g(A \bigcup B) = g(A) \bigcup g(B)\)</span></p>
+<p>My intuition about this comes from a background in boolean logic. My first inclination was to try and prove this with a truth table, but I could not make it generic enough for this process.</p>
+<p>Let <span class="math inline">\(x \in A \bigcup B\)</span> this then implies</p>
+<p><span class="math display">\[g(x) \in g(A \bigcup B) = g(A \bigcup B)\]</span></p>
+<p>Again I somewhat struggled with the last step of this process as I could not find a clear way to communicate the equality of this relationship other than the fact that I feel it is intuitively obvious.</p>
 <h3 id="self-evaluation-1">Self-Evaluation</h3>
+<p><br> <br> <br> <br> <br></p>
 <hr />
 <h2 id="problem-1.2.8">Problem 1.2.8</h2>
 <h3 id="original-solution-2">Original Solution</h3>
+<h4 id="part-a-2">Part A</h4>
+<h4 id="f-n---n-textrm-that-is-1-1-but-not-onto"><em><span class="math inline">\(f : N -&gt; N \textrm{ that is 1-1 but not onto}\)</span></em></h4>
+<p>Let <span class="math inline">\(f(x) = 2(x)+1\)</span></p>
+<p>then</p>
+<p><span class="math display">\[f(1) = 3\]</span> <span class="math display">\[f(2) = 5\]</span> <span class="math display">\[...\]</span></p>
+<p>so the mapping is 1-1, in that it maps every element uniquely, but not all of B is represented, i.e. there are no even numbers in the mapping.</p>
+<h4 id="part-b-2">Part B</h4>
+<h4 id="f-n---n-textrm-that-is-onto-but-not-1-1"><em><span class="math inline">\(f : N -&gt; N \textrm{ that is onto but not 1-1}\)</span></em></h4>
+<p>Let</p>
+<p><span class="math display">\[
+f(x) = \left\{
+        \begin{array}{ll}
+            x &amp; \quad x &lt; 5 \\
+            x-5 &amp; \quad x \geq 5
+        \end{array}
+    \right.
+\]</span></p>
+<p>The mapping is onto, in that all of B is represented. However it is not 1-1. For example <span class="math inline">\(f(6) = f(1)\)</span>.</p>
+<h4 id="part-c-1">Part C</h4>
+<h4 id="f-n---z-textrm-that-is-1-1-and-onto"><em><span class="math inline">\(f : N -&gt; Z \textrm{ that is 1-1 and onto}\)</span></em></h4>
+<p>This is not possible. Because <span class="math inline">\(N \subseteq Z\)</span>, a function that is both 1-1 and onto cannot be achieved.</p>
 <h3 id="self-evaluation-2">Self-Evaluation</h3>
+<p><br> <br> <br> <br> <br></p>
 <hr />
 <h2 id="problem-1.2.11">Problem 1.2.11</h2>
 <p>Form the logical negation of each claim. In each case, make an intuitive guess as to wether the claim or its negation is the true statement.</p>
 <h3 id="original-solution-3">Original Solution</h3>
-<h4 id="part-a-1">Part A</h4>
+<h4 id="part-a-3">Part A</h4>
 <h4 id="for-all-real-numbers-satisfying-ab-there-exists-an-n-in-n-such-that-a-frac1n-b"><em>For all real numbers satisfying <span class="math inline">\(a&lt;b\)</span>, there exists an <span class="math inline">\(n \in N\)</span> such that <span class="math inline">\(a + \frac{1}{n} &lt; b\)</span></em></h4>
 <p>There exists real numbers <span class="math inline">\(a&lt;b\)</span> such that for all <span class="math inline">\(n \in N a + \frac{1}{n} \geq b\)</span></p>
-<p>…</p>
-<h4 id="part-b-1">Part B</h4>
+<p>The negated statement falls apart when trying to prove the statement holds <em>for all</em> <span class="math inline">\(n\)</span>. For example if we let <span class="math inline">\(a = 1, b = 2, \textrm{ and } n = 10\)</span>, the negated statement is false (for all <span class="math inline">\(n&gt;1\)</span>). Conversely, <span class="math inline">\(n\)</span> can always be chosen in such a way that the original statement is true, regardless of the values for <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>.</p>
+<h4 id="part-b-3">Part B</h4>
 <h4 id="there-exists-a-real-number-x0-such-that-x1n-for-all-n-in-n"><em>There exists a real number <span class="math inline">\(x&gt;0\)</span> such that <span class="math inline">\(x&lt;1/n\)</span> for all <span class="math inline">\(n \in N\)</span></em></h4>
 <p>For all real numbers, <span class="math inline">\(x&gt;0\)</span>, there exists an n (<span class="math inline">\(n \in N\)</span>) such that <span class="math inline">\(x \geq \frac{1}{n}\)</span></p>
-<p>…</p>
-<h4 id="part-c">Part C</h4>
+<p>I would hypothesize that the orignal statement is correct. The negated statement does not hold across <span class="math inline">\(R\)</span> for all possible <span class="math inline">\(x\)</span>. For example if <span class="math inline">\(x = 0.1, \textrm{ and } n = 1\)</span> the orignal statement would hold, for all <span class="math inline">\(n\)</span>, while the negated statement does not.</p>
+<h4 id="part-c-2">Part C</h4>
 <h4 id="between-every-two-distinct-real-numbers-there-is-a-rational-number"><em>Between every two distinct real numbers there is a rational number</em></h4>
 <p>Between every two distinct real numbers, there is not a rational number.</p>
-<p>…</p>
+<p>The original statement is correct. <span class="math inline">\(R\)</span> exists as an extension of <span class="math inline">\(Q\)</span>. As the book describes it, <span class="math inline">\(R\)</span> “fills in the gaps” left behind by <span class="math inline">\(Q\)</span>. While these “gaps” may not be as literal as I am assuming, the expression helps visualize how the two sets coexist, which leads me to my conclusion.</p>
 <h3 id="self-evaluation-3">Self-Evaluation</h3>
+<p><br> <br> <br> <br> <br></p>
 <hr />
 <h2 id="problem-1.2.12">Problem 1.2.12</h2>
 <p>Let <span class="math inline">\(y_1 = 6\)</span> and for each <span class="math inline">\(n \in N\)</span> define <span class="math inline">\(Y_{n+1} = \frac{(2y_n-6)}{3}\)</span></p>
 <h3 id="original-solution-4">Original Solution</h3>
-<h4 id="part-a-2">Part A</h4>
+<h4 id="part-a-4">Part A</h4>
 <h4 id="use-induction-to-prove-that-the-sequence-satisfies-y_n--6-for-all-n-in-n"><em>Use induction to prove that the sequence satisfies <span class="math inline">\(y_n &gt; -6\)</span> for all <span class="math inline">\(n \in N\)</span></em></h4>
 <p>For <span class="math inline">\(n=1\)</span></p>
 <p><span class="math display">\[y_1 = 6 &gt; -6\]</span></p>
@@ -87,7 +135,7 @@
 </blockquote>
 <p>Suppose <span class="math inline">\(y_n &gt; -6\)</span></p>
 <p><span class="math display">\[y_{n+1} = \frac{2y_n-6}{3} &gt; \frac{2(-6)-6}{3} = -6\]</span></p>
-<h4 id="part-b-2">Part B</h4>
+<h4 id="part-b-4">Part B</h4>
 <h4 id="use-another-induction-argument-to-show-the-sequence-is-decreasing"><em>Use another induction argument to show the sequence is decreasing</em></h4>
 <p>For <span class="math inline">\(n=1\)</span></p>
 <p><span class="math display">\[y_2 = \frac{2(y_1)-6}{3} = \frac{2(6)-6}{3} = 2 &lt; 6\]</span></p>
@@ -98,5 +146,6 @@
 <p><span class="math display">\[2y_{n+1} &lt; 2y_n\]</span> <span class="math display">\[2y_{n+1} - 6 &lt; 2y_n - 6\]</span> <span class="math display">\[\frac{2y_{n+1} - 6}{3} &lt; \frac{2y_n - 6}{3}\]</span></p>
 <p>It then follows that <span class="math inline">\(y_{n+2} &lt; y_{n+1}\)</span>, etc.</p>
 <h3 id="self-evaluation-4">Self-Evaluation</h3>
+<p><br> <br> <br> <br> <br></p>
 <hr />
 <h2 id="external-references">External References</h2>

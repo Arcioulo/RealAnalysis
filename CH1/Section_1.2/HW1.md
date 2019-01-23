@@ -100,6 +100,12 @@ From theorem 1.1.1 we should able to rewrite $b^2$ at this point in a way that b
 
 ### Self-Evaluation
 
+<br>
+<br>
+<br>
+<br>
+<br>
+
 ---
 
 ## Problem 1.2.7
@@ -170,6 +176,12 @@ Again I somewhat struggled with the last step of this process as I could not fin
 
 ### Self-Evaluation
 
+<br>
+<br>
+<br>
+<br>
+<br>
+
 ---
 
 ## Problem 1.2.8
@@ -208,7 +220,15 @@ The mapping is onto, in that all of B is represented.  However it is not 1-1. Fo
 #### Part C
 #### _$f : N -> Z \textrm{ that is 1-1 and onto}$_
 
+This is not possible.  Because $N \subseteq Z$, a function that is both 1-1 and onto cannot be achieved.
+
 ### Self-Evaluation
+
+<br>
+<br>
+<br>
+<br>
+<br>
 
 ---
 
@@ -240,6 +260,12 @@ Between every two distinct real numbers, there is not a rational number.
 The original statement is correct.  $R$ exists as an extension of $Q$.  As the book describes it, $R$ "fills in the gaps" left behind by $Q$.  While these "gaps" may not be as literal as I am assuming, the expression helps visualize how the two sets coexist, which leads me to my conclusion.
 
 ### Self-Evaluation
+
+<br>
+<br>
+<br>
+<br>
+<br>
 
 ---
 
@@ -282,6 +308,12 @@ $$\frac{2y_{n+1} - 6}{3} < \frac{2y_n - 6}{3}$$
 It then follows that $y_{n+2} < y_{n+1}$, etc.
 
 ### Self-Evaluation
+
+<br>
+<br>
+<br>
+<br>
+<br>
 
 ---
 
