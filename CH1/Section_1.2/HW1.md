@@ -100,11 +100,9 @@ From theorem 1.1.1 we should able to rewrite $b^2$ at this point in a way that b
 
 ### Self-Evaluation
 
-<br>
-<br>
-<br>
-<br>
-<br>
+#### Part b
+
+My proof worked to show that both numbers were not relatively prime.  Thus I replaced a = 2 in my answer to show that $b^2$ is in fact relatively prime.  I could have stopped earlier in my answer to explain the shortcomings of the proof, but I decided to see the substitution through to prove the point.
 
 ---
 
@@ -170,17 +168,29 @@ My intuition about this comes from a background in boolean logic.  My first incl
 
 Let $x \in A \bigcup B$ this then implies
 
-$$g(x) \in g(A \bigcup B) = g(A \bigcup B)$$
+$$g(x) \in g(A \bigcup B) = g(A) \bigcup g(B)$$
 
 Again I somewhat struggled with the last step of this process as I could not find a clear way to communicate the equality of this relationship other than the fact that I feel it is intuitively obvious.
 
 ### Self-Evaluation
 
-<br>
-<br>
-<br>
-<br>
-<br>
+#### Part A
+
+My answers for finding $f(A) \textrm { and } f(B)$ lack verification that the solution range maps back to the original domain.  I did not think this was needed, due to the nature of $f$ given in the problem.
+
+#### Part B
+
+My answer differs, but is logically consistent with the solution presented.
+
+#### Part C
+
+Reviewing the solution, I see that the component I was missing in my answer was working backwards from the assumption that $y \in g(A \bigcap B)$ as the start of my proof.  I hit a wall when trying to connect the relationship between $g(A \bigcap B)$ and $g(A) \bigcap (B)$ but I now see how that is accomplished.
+
+#### Part D
+
+The beginning part of my answer lacks some of the formality shown in setting up the conjecture.  I assumed that the nature of the sets, A and B, were obvious given the context of the problem.
+
+As for the proof itself, I made a similar mistake as I did in part C.  Had I started my proof with the assumption shown, I feel I would have been able to work through the proof more effectively.  My answer also originally stated $g(x) \in g(A \bigcup B) = g(A \bigcup B)$ but this has been updated in this submssion to be: $g(x) \in g(A \bigcup B) = g(A) \bigcup g(B)$.
 
 ---
 
@@ -224,11 +234,14 @@ This is not possible.  Because $N \subseteq Z$, a function that is both 1-1 and 
 
 ### Self-Evaluation
 
-<br>
-<br>
-<br>
-<br>
-<br>
+#### Part A
+My answer differs, but I believe it is still correct for the same reasoning presented in the solutions.
+
+#### Part B
+The same as above, my answers differs but I believe it is still a valid solution.
+
+#### Part C
+My logic here was flawed about the relationship between $N \textrm{ and } Z$.  I was struggling to come up with a well behaved function that met the requirements of the problem statement, so I took a guess that it was not possible.
 
 ---
 
@@ -261,11 +274,11 @@ The original statement is correct.  $R$ exists as an extension of $Q$.  As the b
 
 ### Self-Evaluation
 
-<br>
-<br>
-<br>
-<br>
-<br>
+#### Part B
+My answer differed in that I switched the direction of the second inequality from $x<1/n$ to $x \geq \frac{1}{n}$.  I believe this is correct and that the answer given in the solutions is incorrect.  That being said, my answer about which statement is correct (the original or negated statement) would change depending on the direction of this inequality.  I stand by my original answer.
+
+#### Part C
+My solution is worded differently but is logically equivalent.
 
 ---
 
@@ -309,11 +322,7 @@ It then follows that $y_{n+2} < y_{n+1}$, etc.
 
 ### Self-Evaluation
 
-<br>
-<br>
-<br>
-<br>
-<br>
+No comments.
 
 ---
 
