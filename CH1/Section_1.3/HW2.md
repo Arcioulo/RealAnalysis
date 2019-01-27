@@ -1,4 +1,4 @@
-# Homework NUMBER
+# Homework 2
 
 Mark Archual | MTH 515
 
@@ -80,11 +80,27 @@ Dr. Scott | Real Analysis
 
 #### _Part A $(\frac{m}{n} : m,n \in N \textrm{ with } m < n)$_
 
+Sup = 1
+
+Inf = 0
+
 #### _Part B $(\frac{-1^m}{n} : m,n \in N)$_
+
+Sup = 1
+
+Inf = -1
 
 #### _Part C $(\frac{n}{3n+1} : n \in N)$_
 
+Sup = 1/3
+
+Inf = 1/4
+
 #### _Part D $(\frac{m}{m+n} : m,n \in N)$_
+
+Sup = 1
+
+Inf = 0
 
 ### Self-Evaluation
 
