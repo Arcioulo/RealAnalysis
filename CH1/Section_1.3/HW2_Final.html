@@ -1,0 +1,90 @@
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+<h1 id="homework-2">Homework 2</h1>
+<p>Mark Archual | MTH 515</p>
+<p>Dr. Scott | Real Analysis</p>
+<p>1/30/19</p>
+<h2 id="problem-1.3.3">Problem 1.3.3</h2>
+<h3 id="original-solution">Original Solution</h3>
+<h4 id="part-a-show-that-textrm-sup-b-textrm-inf-a"><em>Part A Show that <span class="math inline">\(\textrm{ sup } B = \textrm{ inf } A\)</span></em></h4>
+<p>Because <span class="math inline">\(A\)</span> is nonempty and bounded below, then we know an infimum exists. Let <span class="math inline">\(x = \textrm{inf(}A)\)</span>. By the definition of <span class="math inline">\(\textrm{inf(}A)\)</span>, then we know <span class="math inline">\(x \in B\)</span>. Thus <span class="math inline">\(B\)</span> is nonempty and due to the relationship defined in the problem statement, we know it has an upper bound. Let <span class="math inline">\(y = \textrm{sup(}B)\)</span> .</p>
+<p>Assume <span class="math inline">\(y \neq x\)</span></p>
+<p>We know <span class="math inline">\(x \in B\)</span> and <span class="math inline">\(x\)</span> must be an upper bound for <span class="math inline">\(B\)</span>. If <span class="math inline">\(x\)</span> is an upper bound for B, then <span class="math inline">\(x \geq y\)</span>. However, we know <span class="math inline">\(x\)</span> is not greater than <span class="math inline">\(y\)</span>, otherwise it would not be the <span class="math inline">\(\textrm{inf(}A)\)</span> because it would no longer be a lower bound. Thus</p>
+<p><span class="math display">\[y = x\]</span> <span class="math display">\[\textrm{ sup } B = \textrm{ inf } A\]</span></p>
+<h4 id="part-b-use-part-a-to-explain-why-there-is-no-need-to-assert-that-greatest-lower-bounds-exist-as-part-of-the-aoc"><em>Part B Use Part A to explain why there is no need to assert that greatest lower bounds exist as part of the AOC</em></h4>
+<p>As shown in part A, the greatest lower bound of one set, can be thought of as the least upper bound of another. This idea is further illustrated by the Nested Interval Property.</p>
+<h3 id="self-evaluation">Self-Evaluation</h3>
+<h4 id="part-a"><em>Part A</em></h4>
+<p>My answer falls apart at the following statement “However, we know x is not greater than y, otherwise it would not be the <span class="math inline">\(\textrm{inf(}A)\)</span> because it would no longer be a lower bound”. This is not true. It would simply mean that x is no longer the infimum. I should have taken the approach shown in the solution and shown <span class="math inline">\(y \geq x\)</span>.</p>
+<h2 id="problem-1.3.4">Problem 1.3.4</h2>
+<h3 id="original-solution-1">Original Solution</h3>
+<h4 id="part-a-find-a-formula-for-textrmsup-a_1-cup-a_2.-extend-this-to-textrmsup-cup_k1n-a_k"><em>Part A Find a formula for <span class="math inline">\(\textrm{sup ( } A_1 \cup A_2)\)</span>. Extend this to <span class="math inline">\(\textrm{sup (} \cup_{k=1}^n A_k)\)</span></em></h4>
+<p>Define <span class="math inline">\(max(A)\)</span> to be the maximum value of a set. Then</p>
+<p><span class="math display">\[\textrm{sup(}A_1 \cup A_2) = \textrm{max(}A_1 \cup A_2)\]</span></p>
+<p>Because the set <span class="math inline">\(\cup_{k=1}^{n} A_k\)</span> is still bounded above, we know that whatever value is the maximum of the set, is also the supremum.</p>
+<p><span class="math display">\[ \textrm{sup (} \cup_{k=1}^n A_k) = \textrm{max(}\cup_{k=1}^n A_k) \]</span></p>
+<h4 id="part-b-consider-textrmsup-cup_k1infty-a_k.-does-the-formula-in-part-a-extend-to-the-infinite-case"><em>Part B Consider <span class="math inline">\(\textrm{sup (} \cup_{k=1}^{\infty} A_k)\)</span>. Does the formula in Part A extend to the infinite case?</em></h4>
+<p>The formula does not extend to the infinite case. This case is not bounded. Therefore one cannot assume that the supremum and the maximum value are contained in the given intersection, as it is possible that supremum exists outside the bounds of the interval of the intersection.</p>
+<h3 id="self-evaluation-1">Self-Evaluation</h3>
+<p>I did not take the time explain why the maximum of a finite set is equal to its least upper bound. I assumed we could use this fact as it is stated in the book. Also my answer is <span class="math inline">\(\textrm{max(}A_1 \cup A_2)\)</span>, which I believe is equivalent to <span class="math inline">\(\textrm{max(}\textrm{sup(}A_1) \cup \textrm{sup(}A_2))\)</span> becuase, as stated in the book for bounded sets, “when the maximum exists, then it is also the supremum”.</p>
+<h2 id="problem-1.3.5">Problem 1.3.5</h2>
+<h3 id="original-solution-2">Original Solution</h3>
+<h4 id="part-a-if-c-geq-0-show-that-textrm-sup-ca-ctextrmsupa"><em>Part A If <span class="math inline">\(c \geq 0\)</span>, show that <span class="math inline">\(\textrm {sup (} cA) = c*\textrm{sup}(A)\)</span></em></h4>
+<p>Let <span class="math inline">\(s = \textrm{ sup (}A)\)</span> then</p>
+<p><span class="math display">\[ \forall a \in A, a \leq s \]</span></p>
+<p>so</p>
+<p><span class="math display">\[c*a \leq c*s\]</span></p>
+<p>thus, s in an upper bound.</p>
+<p>Let b be any upper bound for <span class="math inline">\(c*A\)</span></p>
+<p>Let <span class="math inline">\(a \in A\)</span> so <span class="math inline">\(c*a \in c*A\)</span>. Then</p>
+<p><span class="math display">\[c*a \leq b\]</span> <span class="math display">\[a \leq b/c\]</span> If <span class="math inline">\(b/c\)</span> is an upper bound for <span class="math inline">\(a\)</span>, then</p>
+<p><span class="math display">\[s \leq b/c\]</span> <span class="math display">\[c*s \leq b\]</span> <span class="math display">\[c*s = \textrm{ sup(}cA)\]</span></p>
+<h4 id="part-b-postulate-a-similar-type-of-statement-for-textrmsupca-for-the-case-c-0"><em>Part B Postulate a similar type of statement for <span class="math inline">\(\textrm{sup(}cA)\)</span> for the case <span class="math inline">\(c &lt; 0\)</span></em></h4>
+<p><span class="math inline">\(\textrm{ sup(}cA) = c*\textrm{inf(}A)\)</span></p>
+<h3 id="self-evaluation-2">Self-Evaluation</h3>
+<p>For the first part of the proof, I neglected to state the case for <span class="math inline">\(c = 0\)</span>. Similarly, I should have called out the fact that <span class="math inline">\(c*a \in A\)</span>. Otherwise, the comparison <span class="math inline">\(c*a \leq c*s\)</span> is not necessarily contained in <span class="math inline">\(A\)</span>.</p>
+<h2 id="problem-1.3.6">Problem 1.3.6</h2>
+<h3 id="original-solution-3">Original Solution</h3>
+<h4 id="part-a-let-s-textrmsupa-and-t-textrmsupb.-show-s-t-is-an-upper-bound-for-a-b."><em>Part A Let <span class="math inline">\(s = \textrm{sup}A\)</span> and <span class="math inline">\(t = \textrm{sup}B\)</span>. Show <span class="math inline">\(s + t\)</span> is an upper bound for <span class="math inline">\(A + B\)</span></em>.</h4>
+<p>By the definition of supremum…</p>
+<p><span class="math display">\[s \geq a, \forall a \in A\]</span> <span class="math display">\[t \geq b, \forall b \in B\]</span> <span class="math display">\[s+t \geq A + B\]</span></p>
+<h4 id="part-b-now-let-u-be-an-arbitrary-upper-bound-for-a-b-and-temporarily-fix-a-in-a.-show-t-leq-u---a."><em>Part B Now let <span class="math inline">\(u\)</span> be an arbitrary upper bound for <span class="math inline">\(A + B\)</span>, and temporarily fix <span class="math inline">\(a \in A\)</span>. Show <span class="math inline">\(t \leq u - a\)</span>.</em></h4>
+<p><span class="math display">\[u \geq a + b\]</span> <span class="math display">\[u-a \geq b, \forall b \in B\]</span> <span class="math display">\[u-a \geq t\]</span></p>
+<h4 id="part-c-finally-show-textrmsup-ab-st"><em>Part C Finally, show <span class="math inline">\(\textrm{sup (}A+B) = s+t\)</span></em></h4>
+<p>From <em>Part B</em> we know that <span class="math inline">\(u\)</span> is u.b for <span class="math inline">\(A+B\)</span>. We also know</p>
+<p><span class="math display">\[u-a \geq t\]</span></p>
+<p>Similarly, it follows that</p>
+<p><span class="math display">\[u-b \geq s\]</span></p>
+<p>Combining these two expressions, we get</p>
+<p><span class="math display">\[s + t \leq 2*u - a - b\]</span></p>
+<p><span class="math display">\[s + t + a + b \leq 2*u\]</span></p>
+<p>Because <span class="math inline">\(u\)</span> is an upper bound for <span class="math inline">\(A+B\)</span>,</p>
+<p><span class="math display">\[u \geq a+b\]</span></p>
+<p>which helps resolve the previous expression to</p>
+<p><span class="math display">\[s + t \leq u\]</span></p>
+<p>which implies that <span class="math inline">\(s+t = \textrm{sup (}A+B)\)</span>.</p>
+<h4 id="part-d-construct-another-proof-of-this-same-fact-using-lemma-1.3.8"><em>Part D Construct another proof of this same fact using Lemma 1.3.8</em></h4>
+<p>Assume <span class="math inline">\(s+t\)</span> is an upper bound for <span class="math inline">\(A+B\)</span>. Then, by Lemma 1.3.8</p>
+<p><span class="math display">\[s + t &lt; a + b - \epsilon, \forall \epsilon &gt; 0\]</span></p>
+<p>Therefore <span class="math inline">\(s+t = \textrm{sup(}A+B)\)</span></p>
+<h3 id="self-evaluation-3">Self-Evaluation</h3>
+<h4 id="part-c"><em>Part C</em></h4>
+<p>My answer differs, but I believe is logically consistent and also proves the stated question. I could see there being an issue with just assuming <span class="math inline">\(u-b \geq s\)</span> based on the fact <span class="math inline">\(u-a \geq t\)</span>, without proving it. In which case, my answer would not stand.</p>
+<h4 id="part-d"><em>Part D</em></h4>
+<p>My answer was a little quick to assume that the facts surrounding <span class="math inline">\(\textrm{sup(}A)\)</span> and <span class="math inline">\(\textrm{sup(}B)\)</span> individually being a least upper bound for their respective sets. I should have included the statements <span class="math inline">\(s - \frac{\epsilon}{2} &lt; a\)</span> and <span class="math inline">\(t - \frac{\epsilon}{2} &lt; b\)</span>.</p>
+<h2 id="problem-1.3.8">Problem 1.3.8</h2>
+<h3 id="original-solution-4">Original Solution</h3>
+<h4 id="part-a-fracmn-mn-in-n-textrm-with-m-n"><em>Part A <span class="math inline">\(\frac{m}{n} : m,n \in\)</span> N <span class="math inline">\(\textrm{ with } m &lt; n\)</span></em></h4>
+<p>Sup = 1</p>
+<p>Inf = 0</p>
+<h4 id="part-b-frac-1mn-mn-in-n"><em>Part B <span class="math inline">\(\frac{-1^m}{n} : m,n \in\)</span> N</em></h4>
+<p>Sup = 1</p>
+<p>Inf = -1</p>
+<h4 id="part-c-fracn3n1-n-in-n"><em>Part C <span class="math inline">\(\frac{n}{3n+1} : n \in\)</span> N</em></h4>
+<p>Sup = 1/3</p>
+<p>Inf = 1/4</p>
+<h4 id="part-d-fracmmn-mn-in-n"><em>Part D <span class="math inline">\(\frac{m}{m+n} : m,n \in\)</span> N</em></h4>
+<p>Sup = 1</p>
+<p>Inf = 0</p>
+<h3 id="self-evaluation-4">Self-Evaluation</h3>
+<p>No comments.</p>
+<h2 id="external-references">External References</h2>
