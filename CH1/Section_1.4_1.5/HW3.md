@@ -25,11 +25,7 @@ This nested sequence of intervals share the same infimum, 0, regardless of the v
 
 ### Self-Evaluation
 
-<br>
-<br>
-<br>
-<br>
-<br>
+I feel that I had the right idea here, but I did not use the Archimedean property to its full extent.  Rather than relying on the idea that the only common intersection point is the infimum (which I think is still fair to say in this case), I could have used this property to better illustrate the relationship between the intersections.
 
 ## Problem 1.4.6
 
@@ -71,16 +67,14 @@ or
 
 $$\frac{p}{q} \leq 1/10$$
 
-Thus values outisde of this range cannot be found.
+Thus values outside of this range cannot be found.
 
 
 ### Self-Evaluation
 
-<br>
-<br>
-<br>
-<br>
-<br>
+#### Part A
+
+This one I missed.  I misunderstood how the distance between values would work out for this one but now I see how to work through this reasoning.
 
 ---
 
@@ -88,13 +82,13 @@ Thus values outisde of this range cannot be found.
 
 ### Original Solution
 
-#### _Part A Why is $A~A$ for every set $A$?_
+#### _Part A Why is $A \sim A$ for every set $A$?_
 
-When $A~A$, then a bijection must exist from $A \rightarrow A$.  This bijection is trivial. As an example $f(x) = x_n*1, \forall x \in$ $A$.
+When $A \sim A$, then a bijection must exist from $A \rightarrow A$.  This bijection is trivial. As an example $f(x) = x_n*1, \forall x \in$ $A$.
 
 #### _Part B Given sets $A$ and $B$, explain why $A \sim B$ is equivalent to asserting $B \sim A$._
 
-$A~B$ is equivalent to $B~A$ because if a bijection exists for $A \rightarrow B$, then the inverse of the bijection would be a valid mapping from $B \rightarrow A$.
+$A \sim B$ is equivalent to $B \sim A$ because if a bijection exists for $A \rightarrow B$, then the inverse of the bijection would be a valid mapping from $B \rightarrow A$.
 
 #### _Part C For three sets $A, B,$ and $C,$ show that $A \sim B$ and $B \sim C$ implies $A \sim C$.  These three properties are what is meant by saying that ~ is an equivalence relation_.
 
@@ -102,41 +96,35 @@ If a bijection exists from $A \rightarrow B$ and $B \rightarrow C$, then a valid
 
 ### Self-Evaluation
 
-<br>
-<br>
-<br>
-<br>
-<br>
-
+No comments.
 ---
 
 ## Problem 1.5.7
 
 ### Original Solution
 
-#### _Part A Find a 1-1 function that maps (0,1) into, but not necessarily onto, $S$.
+#### _Part A Find a 1-1 function that maps (0,1) into, but not necessarily onto, $S$._
 
 Let $f(x) = y, x \in (0,1)$ is a 1-1 mapping.  The line segment over the open interval is mapped across the diagonal of the unit square starting at the origin.
 
-#### _Part B Use the fact that every real number has a decimal exapansion to produce a 1-1 function that maps $S$ into (0,1).  Discuss wheter the formulated function is onto._
+#### _Part B Use the fact that every real number has a decimal expansion to produce a 1-1 function that maps $S$ into (0,1).  Discuss whether the formulated function is onto._
 
 As mentioned in the problem statement, every real number has a valid decimal expansion.  Using these expansions, one can think of a number, $x$, as a combination of these decimal values.  Such as $x_n$ = $0.x_1 x_2 x_3 ... x_n$
 
-Let $f(x,y)$ be a function that maps an ordered pair $(x,y)$ of the open unit square to interval $(0,1)$ by alternating $x$ and $y$ decimla expansion values.
+Let $f(x,y)$ be a function that maps an ordered pair $(x,y)$ of the open unit square to interval $(0,1)$ by alternating $x$ and $y$ decimal expansion values.
 
 $$f(x,y) = 0.x_1y_1x_2y_2...x_ny_n$$
 
-I received some help on thinking this question through at the URL listed in [External References](#External-References).
-
+I received some help on thinking this question through at the resource listed in [External References](#External-References).
 
 
 ### Self-Evaluation
 
-<br>
-<br>
-<br>
-<br>
-<br>
+#### Part A
+The intent of my answer matched the solution, however I got a little notationally sloppy and should have specified that $y$ was an ordered pair.
+
+#### Part B
+I neglected to include my discussion as to whether or not the function is onto, however I intended to argue that is not onto for the reasons shown in the solution.
 
 ---
 
@@ -170,7 +158,7 @@ $$b = (\sqrt{3} + \sqrt{2})^4 = 49 + 20\sqrt{6}$$
 
 Combining these terms
 
-$$b + 10a = -1$$
+$$b - 10a = -1$$
 
 So the polynomial needs an additional constant of 1.
 
@@ -189,11 +177,13 @@ We can conclude that the transcendental numbers are not countable because they a
 
 ### Self-Evaluation
 
-<br>
-<br>
-<br>
-<br>
-<br>
+#### Part B
+
+It looks like I was on the right track here with this one but maybe left out some important details.  I should have decomposed what $A_n$ is more closely, as shown, and more carefully described how the pieces of $A_n$ build to form a set that is countable.  I can see how my ideas map to the solution, but the solution is much more explicit.
+
+#### Part C
+
+I took a slightly different approach to show $T$ is not countable, but my answer still holds.
 
 ---
 
