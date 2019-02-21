@@ -97,6 +97,7 @@ If a bijection exists from $A \rightarrow B$ and $B \rightarrow C$, then a valid
 ### Self-Evaluation
 
 No comments.
+
 ---
 
 ## Problem 1.5.7
@@ -179,7 +180,7 @@ We can conclude that the transcendental numbers are not countable because they a
 
 #### Part B
 
-It looks like I was on the right track here with this one but maybe left out some important details.  I should have decomposed what $A_n$ is more closely, as shown, and more carefully described how the pieces of $A_n$ build to form a set that is countable.  I can see how my ideas map to the solution, but the solution is much more explicit.
+It looks like I was on the right track here with this one but maybe left out some important details.  I should have decomposed what $A_n$ is more closely, as shown in the solution, and more carefully described how the pieces of $A_n$ build to form a set that is countable.  I can see how my ideas map to the solution, but the solution is much more explicit.
 
 #### Part C
 
