@@ -38,9 +38,6 @@ $$\frac{1}{4-a_n} > \frac{1}{4}$$
 
 Thus the sequence is bounded.
 
-#### _Part A_
-A small mistake in the conclusion, I should have stated $x_{n+2} \leq x_{n+1}$
-
 #### _Part B_
 If $x_n$ exists, then we can use induction to show $x_{n+1}$ exists.  Alternatively, $x_{n+1}$ can be thought of as a subsequence of $x_n$ and because $x_n$ converges, $x_{n+1}$ converges as well.
 
@@ -59,6 +56,9 @@ $$(l+2)^2 - 3 = 0$$
 $$l = \sqrt{3} - 2$$
 
 ### Self-Evaluation
+
+#### _Part A_
+A small mistake in the conclusion, I should have stated $x_{n+2} \leq x_{n+1}$
 
 #### _Part B_
 My answer here differs, but I believe the fact about subsequences would hold here and be correct.
@@ -94,6 +94,24 @@ $$a_{n+2} > a_{n+1}$$
 
 Inductive step complete.
 
+Find the limit.
+
+$$lim(a_{n+1}) = lim(a_n)$$
+
+Let $lim(a_{n+1}) = l$
+
+$$l = lim(\sqrt{2*a_n})$$
+$$l = \sqrt{2*lim(a_n)}$$
+
+We know that $lim(a_{n+1}) = lim(a_n) = l$
+
+$$l = \sqrt{2*l}$$
+$$l^2 = 2l$$
+$$l^2 - 2l = 0$$
+
+Thus $l$ is either 0 or 2.  We know the sequence is increasing so 0 does not make sense.
+
+$$l = 2$$
 
 ### Self-Evaluation
 
@@ -122,7 +140,7 @@ Part B I ran out of time and was a bit confused on.  I was not sure if the probl
 ### Self-Evaluation
 
 #### _Part B_
-I see that I was mistaken and that the terms of the two sequences do not interact with each other.  I think the book could have maybe done a better job here with the notation, but regardless I could have done some more critical thinking here.  I see that the key was utilizing the known relationships between $x_n$ and $y_n$ and using the MCT to know they converge.
+I see that I was mistaken and that the terms of the two sequences do not interact with each other.  I think the book could have maybe done a better job here with the notation, but regardless I could have done some more critical thinking here.  I see that the key was utilizing the known relationships between $x_n$ and $y_n$ and using the MCT to show they converge.
 
 ## Problem 2.5.2
 
@@ -147,7 +165,7 @@ This is true and is a result of Theorem 2.5.5.
 ### Self-Evaluation
 
 #### _Parts B and C_
-I got parts B and C a little confused in my analysis.  I remebered us going over Part C in class, and I relied on that example a little too heavily for Part B.  In Part B, I was thinking too similarly and was thinking that the subsequence just converged to a different term than the overall sequence, not that it diverged all together.  This was a pretty bad error on my part, and I see why B is simply the contrapositive of Theorem 2.5.2.
+I got parts B and C a little confused in my analysis.  I remebered us going over Part C in class, and I relied on that example a little too heavily for Part B.  In Part B, I was thinking that the subsequence just converged to a different term than the overall sequence, not that it diverged all together.  I now see why B is simply the contrapositive of Theorem 2.5.2.
 
 Expanding on Part C, I could have given more background to my answer but I assumed that since it was stated pretty explicitly in the text that we could simply refer back to the claim that was made there.
 
