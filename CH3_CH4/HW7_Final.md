@@ -32,8 +32,6 @@ This set is compact as it is bounded by $[\frac{1}{2}, 1]$ and it contains both 
 
 ### Self-Evaluation
 
-No real comments on this section other than I incorrectly stated in _Part E_ that the sequence converged to 1/2.
-
 ---
 
 ## Problem 3.3.5
@@ -57,8 +55,6 @@ False, for example consider the $(0,1) \cap [0,1]$.  The result is not compact, 
 This is false.  An example is given in the proof of theorem 3.4.3.  In general, the arbitrary intersection of closed subsections of $\mathbb{N}$ can only be $\empty$.
 
 ### Self-Evaluation
-
-No major differences here either, however I could have given a more rigorous answer for _Part B_ other than relying on my answer for _Part A_.
 
 ---
 
@@ -97,11 +93,11 @@ So $\delta = \sqrt[3]{\epsilon}$.
 
 >Proof
 
-Let $\epsilon > 0$ be arbitrary and set $\delta = \sqrt[3]{\epsilon}$. If $0<\lvert x \rvert < \delta$ then $\ldots$
+Let $\epsilon > 0 be arbitrary$ and set $\delta = \sqrt[3]{\epsilon}$. If $0<\lvert x \rvert < \delta$ then $\ldots$
 
 $$ \therefore \lvert x^3 \rvert = x < \delta^3 = (\sqrt[3]{\epsilon})^3 = \epsilon$$
 
-#### _Part C_
+#### _Part C
 
 >Rough Work
 
@@ -136,14 +132,6 @@ $$ \therefore \lvert x^2 + x -6 \rvert = \lvert x+3\rvert \lvert x-2 \rvert < 6\
 This one I had some trouble with the algebra and trying to solve for epsilon in terms of the limit.  I could not make any significant progress to generate a proof.
 
 ### Self-Evaluation
-
-In general I should have restated the limit at the end of my formal proof.
-
-For _Part D_ I see the approach and how it is similar to _Part C_.  I worked the expression to 
-
-$$ \frac {\lvert x - 3 \rvert} {3 \lvert x \rvert}$$
-
-but I had a hard time seeing where to go from here.
 
 ---
 
@@ -189,8 +177,6 @@ $$\lvert \sqrt[3]{x} (-1)^{\frac{1}{x}} \rvert < \lvert \sqrt[3]{x} \rvert < \sq
 
 ### Self-Evaluation
 
-My justification for _Part A_ was different but I believe still valid.
-
 ---
 
 ## Problem 4.3.1
@@ -222,7 +208,7 @@ Let $a = \sqrt[3]{x}$ and $b = \sqrt[3]{c}$.  Then $\ldots$
 
 $$\lvert \sqrt[3]{x} - \sqrt[3]{c} \rvert = \lvert \frac{(a -b) (a^2 +ab +b^2)}{a^2 + ab + b^2}$$
 $$= \frac {a^3 - b^3}{a^2 + ab + b^2}$$
-$$= \frac {x -c}{\sqrt[3]{x}^2 + \sqrt[3]{x}\sqrt[3]{c} + \sqrt[3]{c}^2} < \frac{x - c}{\sqrt[3]{c}^2} < \epsilon$$
+$$= \frac {x -c}{\sqrt[3]{x}^2 + \sqrt[3]{x}\sqrt[3]{c} + \sqrt[3]{c}^2} < \frac{x - c}{-\sqrt[3]{c}} < \epsilon$$
 
 So $x-c < \epsilon * \sqrt[3]{c}^2 = \delta$
 
@@ -235,8 +221,6 @@ $\lvert \sqrt[3]{x} - \sqrt[3]{c} \rvert = \frac {x -c}{\sqrt[3]{x}^2 + \sqrt[3]
 
 
 ### Self-Evaluation
-
-I did not have a justification for why we could assume c to be greater than 0.  Otherwise no comments.
 
 ---
 
@@ -270,8 +254,6 @@ If $f$ is continuous and not $g$ then it does not hold because $g$ must be conti
 If $g$ is continuous and not $f$ then the validity depends on the nature of $g o f$.
 
 ### Self-Evaluation
-
-For _Part C_ I got a little 'hand wavey' with the phrase 'the nature of $g o f$.  Looking at the solution, it is more that the sequence $x_n$ must be valid for the limit of $g o f$ to hold.
 
 ---
 
