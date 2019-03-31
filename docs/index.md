@@ -106,14 +106,26 @@ $$ \frac{1}{9} + \frac {1}{27} + \frac{2^2}{3^4} + \ldots = \sum_{n=1}^{\infty} 
 
 This shows that the sum of lengths of intervals that make up $C_n$ is $1 - \frac{1}{3} = \frac{2}{3}$ which is not zero.
 
+__Result:__ Sum of intervals that make up $C_n$ tends to $\frac{2}{3}$ as $n \to \infty$.
+
 > Solution provided by Esra Celik
 
 ## Exercise 7.6.19
 
+Let $c_1' = [0, \frac{4}{9}] \cup [\frac{5}{9}, 1]$ and $c_{n+1}' = \frac{1}{3^{n+1}}c_n' \cup (\frac{5}{9} + \frac{1}{3^{n+1}}c_n')$
+
+$c' = \cap_{n=1}^{\infty} c_n'$ is called the fat Cantor set which is discussed above the problem.  Define $g_n: [0,1] \to [0,1]$ as a continuously increasing function that maps each interval of $c_n$ to $c_n'$ (where $c_n$ is used to construct c).  Each $g_n$ is a bijection that maps the partition of $[0,1]$ by $c_n$ to partition of $[0,1]$ by $c_n'$.  Each boundary point of $c_n$ is mapped to a boundary point of $c_n'$ and for all $m \geq n, g_m(x) = g_n(x)$ if $x \notin c_n$ so $\lim_{n \to \infty} g_n(x)$ exists if $x \notin c$.  If $c \in C$, then there exists some interval in $C_n$ whose length is $\frac{1}{3}n$ which gets mapped to the interval in $c_n'$ whose length is not greater than $\frac{1}{3^{n-1}}$, i.e. there exists $c' \in C'$ such that $\lvert g_n(c) - c' \rvert < \frac {1}{3^{n-1}}$ so $\lim_{n \to \infty} g_n(c)$ exists.
+
+Define
+
+$$ g(x) = \lim_{n \to \infty} g_n(x)$$
+
+where $g: [0,1] \to [0,1]$ such that $g: c \to c'$ and g is continuous and increasing and is a bijection as well.  Let f be defined as 
+
+$$f(x) = \lim_{n \to infty}f_n(x)$$
+
+as in 7.6.15 which is integrable on $[0,1]$ as it is discontinuous on $c$ with measure zero but $f o g$ is not integrable as it is discontinuous on $c'$ whose measure is $\frac{2}{3}$.
+
 > Solution provided by Esra Celik
-
-
-
-
 
 ## External References
