@@ -1,5 +1,5 @@
 # RealAnalysis
-Project, and other materials, for Real Analysis Course.
+Project, and Homework Assignments for Real Analysis Course.
 
 Cleveland State University, Spring 2019
 
