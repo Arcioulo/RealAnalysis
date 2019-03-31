@@ -2,42 +2,66 @@
 layout: default
 ---
 
-# Homework NUMBER
+# Chapter 7 Project
 
-Mark Archual | MTH 515
+## Project Members and Roles
 
-Dr. Scott | Real Analysis
+| Members      	| Exercises      	| Roles                                                   	|   	|
+|--------------	|----------------	|---------------------------------------------------------	|---	|
+| Vishnu Aerva 	| 2, 5, 7, 16    	| Introduction of Presentation                            	|   	|
+| Mark Archual 	| 9, 11, 12, 15  	| Prepared Write-Up Presented Proof of Lebesgue's Theorem 	|   	|
+| Esra Celik   	| 14, 17, 18, 19 	| Closing of Presentation                                 	|   	|
 
-DUE DATE
+## Exercise 7.6.2
 
-## Problem Num
+> Solution provided by Vishnu Aerva
 
-### Original Solution
+## Exercise 7.6.5
 
-### Self-Evaluation
+> Solution provided by Vishnu Aerva
 
-## Problem Num
+## Exercise 7.6.7
 
-### Original Solution
+> Solution provided by Vishnu Aerva
 
-### Self-Evaluation
+## Exercise 7.6.9
 
-## Problem Num
+> Solution provided by Mark Archual
 
-### Original Solution
+## Exercise 7.6.11
 
-### Self-Evaluation
+> Solution provided by Mark Archual
 
-## Problem Num
+## Exercise 7.6.12
 
-### Original Solution
+> Solution provided by Mark Archual
 
-### Self-Evaluation
+## Exercise 7.6.14
 
-## Problem Num
+> Solution provided by Esra Celik
 
-### Original Solution
+## Exercise 7.6.15
 
-### Self-Evaluation
+> Solution provided by Mark Archual
+
+## Exercise 7.6.16
+
+> Solution provided by Vishnu Aerva
+
+## Exercise 7.6.17
+
+> Solution provided by Esra Celik
+
+## Exercise 7.6.18
+
+> Solution provided by Esra Celik
+
+## Exercise 7.6.19
+
+> Solution provided by Esra Celik
+
+
+
+
 
 ## External References
