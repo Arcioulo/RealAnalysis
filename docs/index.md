@@ -1,6 +1,5 @@
 ---
 layout: default
-mathjax: true
 ---
 
 # Chapter 7 Project
