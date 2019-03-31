@@ -62,6 +62,19 @@ Using standard rules for differentation $g'(x)$ for $x \neq 0$ can be computed a
 
 $$g'(x) = 2x\sin(\frac{1}{x}) - \cos(\frac{1}{x})$$
 
+### _Part C_
+
+By the Archimedean Property there exists $2n$ such that $\frac{1}{2n\pi} < g$.  Consider the interval $[\frac{1}{(2n+1)\pi}, \frac{1}{2n\pi}]$
+
+$$g'(\frac{1}{(2n+1)\pi}) = -\cos((2n+1)\pi) = 1$$
+
+Similarly $\ldots$
+
+$$g'(\frac{1}{2n\pi}) = -\cos((2n\pi) = -1$$
+
+Since $g'(x)$ is continuous on $[\frac{1}{(2n+1)\pi}, \frac{1}{2n\pi}]$ bu the intermediate value theorem, $g'(x)$ attains every value between -1 and 1.  Then $\forall \delta > 0, \exists x \in (-\delta, \delta)$ such that $g'(x) \neq 0 = g'(0)$ which shows that $g'(x)$ is not continuous at $x=0$.
+
+
 > Solution provided by Esra Celik
 
 ## Exercise 7.6.15
