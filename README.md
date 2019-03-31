@@ -1,5 +1,9 @@
 # RealAnalysis
-Assignments for Real Analysis course
+Project, and other materials, for Real Analysis Course.
+
+Cleveland State University, Spring 2019
+
+MTH 595 | Dr. Scott
 
 ## Project Members
 Documents and materials related to the write up for the CH 7 project can be found in the folder entitled _docs_.
