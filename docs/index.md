@@ -20,9 +20,9 @@ layout: default
 
 | Members      	| Exercises      	| Roles                                                   	|   	|
 |--------------	|----------------	|---------------------------------------------------------	|---	|
-| Vishnu Aerva 	| 2, 5, 7, 16    	| Introduction of Presentation                            	|   	|
-| Mark Archual 	| 9, 11, 12, 15  	| Prepared Write-Up, Presented Proof of Lebesgue's Theorem 	|   	|
-| Esra Celik   	| 14, 17, 18, 19 	| Closing of Presentation                                 	|   	|
+| Vishnu Aerva 	| 2, 5, 7, 16    	| Applications of Lebesgue's Theorem using Cantor Sets      |   	|
+| Mark Archual 	| 11, 12, 15    	| Proof of Lebesgue's Theorem 	                            |   	|
+| Esra Celik   	| 14, 17, 18, 19 	| Motivation of Topic                                	      |   	|
 
 ## Exercise 7.6.2
 
@@ -35,10 +35,6 @@ layout: default
 ## Exercise 7.6.7
 
 > Solution provided by Vishnu Aerva
-
-## Exercise 7.6.9
-
-> Solution provided by Mark Archual
 
 ## Exercise 7.6.11
 
