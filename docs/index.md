@@ -76,13 +76,173 @@ Can we apply Lebesgue's Criterion to Dirichlet's function?  Yes, however we stil
 
 ## Exercise 7.6.2
 
+### _Part A_
+
+As $C$ is the Cantor set, $C$ is dense nowhere which implies that for any $\delta > 0$, there exists $x \in V_\delta(x)$ such that $x \notin C$.
+
+Let us consider some $a \in C$ and $a_n \in V_{frac{1}{n}}(x)$ such that $a_n \notin C$
+
+$$\lim_{n \to \infty} h(a_n) = 0 \neq h(x)$$
+
+which shows that h(x) is not continuous on C.
+
+TO show that $h(x)$ is continuous on $[0,1] \setminus C$ consider that $[0,1] \setminus C$ is everywhere dense, which implies that there exists a $\delta > 0$ such that $V_\delta(x) \cap C = \emptyset$ for all $x\in[0,1] \setminus C$.
+
+Also, $C$ is a closed set so such a neighborhood must exist in $[0,1] \setminus C$ and $h(a) = 0$ for $a \in V_\delta(x)$ thus it is continuous.
+
+### _Part B_
+
+> Proof
+
+$C$ is the Cantor set and we know that for $c \in C_n$ where $C_n$ is given by
+
+$$ C_n = \cup_{k=0}^{2n-1} ([\frac{3k+0}{3^n}, \frac{3k+1}{3^n}] \cup [\frac{3k+1}{3^n}, \frac{3k+3}{3^n}])$$
+
+Consider a partition $P_n$ of $[0,1]$ given by $0 < \frac{1}{3^n} < \frac{2}{3^n} < \ldots < \frac{3^n -1}{3^n} < 1$.
+
+As shown in _Part A_, the Cantor set, $C$, is nowhere dense.  Because of this we can say that there is an irrational point in every subinterval of every partition where $h(x) = 0$.
+
+$$ \therefore L(h, P_n) = 0$$
+
+Again, for the partition $0 < \frac{1}{3^n} < \frac{2}{3^n} < \ldots < \frac{3^n -1}{3^n} < 1$
+
+We can define the supremum for $x \in C_n \textrm{sup}(h(x): x \in [x_{k-1}, x_{k}]) = 1$, otherwise for $x \notin C_n, x = 0$.
+
+This gives
+
+$$U(h, P_n) = \sum_{k=1}^{2n-1}\frac{2}{3^n} = (\frac{2}{3})^n \to 0$$
+
+$$\lim_{n \to \infty}U(h, P_n) - L(h, P_n) \to 0$$
+as
+$$n \to \infty$$
+
+$\therefore h$ is integrable$
+
 > Solution provided by Vishnu Aerva
 
 ## Exercise 7.6.5
 
+Let $A$ and $B$ be sets of measure zero.  This means that $A$ can be expressed as
+
+$$ A \subseteq \cup_{n=1}^{\infty} O_n$$
+
+and
+
+$$\sum_{n=1}^{\infty} \lvert O_n \rvert \leq \frac{\epsilon}{2}$$
+
+Similarly B can be expressed as
+
+$$ B \subseteq \cup_{n=1}^{\infty} P_n$$
+
+and
+
+$$\sum_{n=1}^{\infty} \lvert P_n \rvert \leq \frac{\epsilon}{2}$$
+
+where $O_n$ and $P_n$ are both open intervals and $\epsilon > 0$.
+
+Because it is known that the union of any countable set is countable, this implies that the collection
+
+$$(O_n, P_n: n \in \mathbb{N})$$ is a countable collection of open intervals that covers $A \cup B$
+
+Also 
+
+$$\sum_{n=1}^{\infty} (\lvert O_n \rvert + \lvert P_n \rvert) = \sum_{n=1}^{\infty} \lvert O_n \rvert + \sum_{n=1}^{\infty} \lvert P_n \rvert < \frac{\epsilon}{2} + \frac{\epsilon}{2} < \epsilon$$
+
+$\therefore A \cup B$ has measure zero.
+
+Now take $A = (A_1, A_2, \ldots A_n)$ to be some countable collection of sets of measure zero.
+
+> Proof by induction
+
+> For i = 1
+A is already said to have measure zero so the **induction is grounded.**
+
+> For i = 2 
+
+$A_1 \cup A_2$ has measure zero, as $A_1$ and $A_2$ have measure zero as is proved above.
+
+> For i = k
+
+Let us assums that for a collection of $k$ sets, the above statement is true.  This can also be written as:
+
+$(O_n: 1 \leq i \leq k, n \in \mathbb{N})$
+
+which is a countable collection of open intervals that covers $\cup_{i = 1}^{k} A_i$
+
+
+And 
+
+$\sum_{i=1}^k \sum_{n=1}^{\infty} \lvert O_{i,n} \rvert < \frac{\epsilon}{2}$
+
+> For i = k + 1
+
+We have:
+
+$(O_{n,i}, O_{k+1} : 1 \leq i \leq k,n \in \mathbb{N})$ 
+
+is a countable collection of open intervals that covers
+
+$\sup_{i = 1}^k A_1 \cup A_{k+1}$ i.e. $\cup_{i=1}^{k+1}A_i$
+
+And $$\sum_{i=1}^k \sum_{n=1}^{\infty} \lvert O_{i,n} \rvert + \sum_{n=1}^{\infty} \lvert O_{k+1} \rvert < \frac {\epsilon}{2} + \frac{\epsilon}{2} < \epsilon$$
+
+Hence we can say that the statement is true for $i = k + 1$
+
+$\therefore$ the union of sets of measure zero also has measure zero.
+
 > Solution provided by Vishnu Aerva
 
 ## Exercise 7.6.7
+
+### _Part A_
+
+Consider the given statement: $f$ is continuous at $x \in [a,b]$.
+
+Consider some $\epsilon$ such that $\epsilon \in (0, \frac{\alpha}{2})$.  Written another way, $0 < \epsilon < \frac{\alpha}{2}$.
+
+There are some $y$ and $z$ such that $y,z \in (x - \delta, x + \delta)$ where $\delta > 0$.  This implies that whenever
+
+$$\lvert x - y \rvert < \delta$$
+
+then
+
+$$\lvert f(x) - f(y) \rvert < \epsilon$$
+
+Now we can write that:
+
+$$ \lvert f(y) - f(z) \rvert \leq \lvert f(y) - f(x) \rvert +  \lvert f(x) - f(z) \rvert \leq \epsilon + \epsilon \leq 2\epsilon$$
+
+$$\lvert f(y) - f(z) \rvert < \alpha$$
+
+$\therefore f$ is $\alpha$-continuous at $x$.
+
+### _Part B_
+
+> Proof by Contradiction
+
+Assume that $f$ is not continuous but $f$ is still $\alpha$-continuous for every $\alpha > 0$, there exists $\delta > 0$ such that $\forall y, z \in (x - \delta, x + \delta) \lvert f(y) - f(z) \rvert < \alpha$
+
+If z = x,
+
+$$ \lvert f(y) - f(x) \rvert < \alpha$$
+
+$\alpha > 0$, whenever $\lvert y - z \rvert < 2\delta$ which implies that $f$ is continuous, which is a contradiction of our assumption.
+
+$\therefore f$ must not be $\alpha$-continuous if $f$ is not continuous.
+
+Assume $x \in D^{\alpha n}$, thus $D \subseteq \cup_{n=1}^{\infty} D^{\alpha n}$.
+
+On the other hand, suppose $x \in D^{\alpha n}$ for all $n$ choose $y_n, z_n \in (x - \alpha_n, x + \alpha_n)$ such that $\lvert f(y_n) - f(z_n)\rvert \geq \alpha_n$
+
+Note:
+
+$$ \lim y_n - \lim z_n = x$$
+
+But if $f$ is continuous at $x$, then 
+
+$$\lim f(y_n) = \lim f(z_n) = x$$, then there would be a N, such that
+
+$$\lvert f(y_n) - f(z_n) \rvert < a_n$$ for all $n >N$, which is a contradiction.  Thus each $D_{\alpha n} \subseteq D$ and $D = \cup_{n=1}^{\infty} D^{\alpha n}$.
 
 > Solution provided by Vishnu Aerva
 
@@ -186,7 +346,7 @@ Since $g'(x)$ is continuous on $[\frac{1}{(2n+1)\pi}, \frac{1}{2n\pi}]$ by the i
 
 For $c \in C$,
 
-$$ lim_{n \to \infty} f_n(c) = 0$$
+$$ \lim_{n \to \infty} f_n(c) = 0$$
 
 as $f$ is defined to be zero for values within the cantor set.
 
@@ -198,11 +358,117 @@ then for all values of $n$, $f_n$ takes on the shifted values of $g(x)$,, which 
 
 Thus 
 
-$$ lim_{n \to \infty} f_n(x) \neq 0 $$
+$$ \lim_{n \to \infty} f_n(x) \neq 0 $$
 
 > Solution provided by Mark Archual
 
 ## Exercise 7.6.16
+
+### _Part A_
+
+We know the Cantor set $C$ is defined as $C = \cap_{n = 0}^{\infty} C_n$
+
+where 
+
+$$C_0 = [0,1]$$
+$$C_1 = [0, \frac{1}{3}] \cup [\frac{2}{3}, 1]$$
+
+etc.
+
+Define $f_0(x) = 0 \forall x \in [0,1] = C_0$
+
+Similary, define $f_1$ on $C_1$, where $f(x) = 0$ if $x \in C_1$ otherwise for $x \notin C_1$
+
+$$f_1(x) = \left\{
+        \begin{array}{ll}
+            g(x - \frac{1}{3}) & \quad x \textrm{ just to the right to 1/3} \\
+            g(-x + \frac{2}{3}) & \quad x \textrm{ just to the left of 2/3}
+        \end{array}
+    \right.
+$$
+
+where $g$ is defined as
+
+$$g(x) = \left\{
+        \begin{array}{ll}
+            x^2 \sin(\frac{1}{x}) & \quad x > 0 \\
+            0 & \quad x \leq 0
+        \end{array}
+    \right.
+$$
+
+If $x \notin C$ then according to the definition of Cantor sets, it is clear that $x \notin C_N$ for all $N \in \mathbb{N}$
+
+So $x$ is in the complement of $C_N$, $x \in C_N^c$
+
+However, $C_N^c$ contains only open intervals which implies that there exists an open interval, $O$, such that 
+
+$$ x \in O \subseteq C_N^c$$
+
+where $\forall y \in O$
+
+$$f(y) = f_N(y)$$
+
+$f_N$ is differentiable everywhere and $O$ is an open interval containing $x$.  This means that $f$ is differentiable at $x$.
+
+### _Part B_
+
+Take a fixed $c \in C$ and any arbitrary number $x \in [0,1]$.
+
+> Case 1
+
+If $x \in C$, then $f(x) = 0$
+
+so
+
+$$\lvert f(x) \rvert \leq \lvert x - c \rvert ^2$$ is trivial.
+
+> Case 2
+
+If $x \notin C$, then from our definition of $g(x)$ it implies that $f(x) = (x - c')^2 \sin(\frac{1}{x-c'})$ for some $c' \in C$.
+
+But as $\sin(\frac{1}{x-c'})$ is a bounded function between $[-1, 1]$ so:
+
+$$-(x-c')^2 \leq f(x) \leq (x-c')^2$$ implies:
+
+$$\lvert f(x) \leq (x-c')^2$$
+
+where $c'$ is an endpoint of the interval that makes on ore more than one $C_n$.  These end points can be taken in such a way that no element $C$ lies between $x$ and $c'$.
+
+This means that:
+
+$$\lvert x - c' \rvert \leq \lvert x - c \rvert$$
+
+which implies
+
+$$\lvert f(x) \rvert \leq (x - c')^2 \leq (x - c)^2$$
+
+Now to show that $f'(c) = 0$
+
+$$ \lvert \frac {f(x) - f(c)}{x-c} \rvert = \lvert \frac{f(x)}{x-c} \rvert$$
+$$\leq \lvert x - c \rvert^2 / \lvert x - c \rvert = \lvert x - c \rvert$$
+
+Because $c \in C$ implies $f(c) = 0$ this implies that
+
+$f'(c) = \lim_{x \to c} \frac{f(x) - f(x)}{x-c}$
+
+$f'(c) = 0$
+
+### _Part C_
+
+Construct a set $C_E$ which contains a countable set of points that appears at the end of the intervals which make $C_1, C_2, ... C_n$
+
+This implies that $f'(x)$ fails to be continuous at each point belonging to $C_E$. But it attains every value between $1$ and $-1$ in the neighborhood of $C_E$.
+
+Now for any arbitrary point $c \in C$ there exists a sequence $<C_n> \in C_E$ such that $<C_n> \to c$.
+
+Take any arbitrary $\delta > 0$ and choose $N \in \mathbb{N}$ such that $\lvert C_N - c \rvert < \frac{\delta}{2}$.
+
+This implies $(C_N - \frac{\delta}{2}, C_N + \frac{\delta}{2}) \subseteq (c - \delta, c+ \delta)$. But $C_N \in C_E$ and $f'$ attains every value between $1$ and $-1$ in the neighborhood of $(C_N - \frac{\delta}{2}, C_N + \frac{\delta}{2})$.
+
+This implies that $f'$ attains every value between $1$ and $-1$ in the neighborhood of $(C - \delta, C + \delta)$.
+
+$\delta$ being arbitrary means that $f'$ is not continuous at any point $c$.
 
 > Solution provided by Vishnu Aerva
 
@@ -246,4 +512,5 @@ as in 7.6.15 which is integrable on $[0,1]$ as it is discontinuous on $c$ with m
 
 Understand Analysis, Course Textbook
 
+Lebesgue Integration Video, https://youtu.be/PGPZ0P1PJfw
 
