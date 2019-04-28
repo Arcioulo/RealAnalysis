@@ -50,6 +50,8 @@ $$g'''_a = \frac{ (6 x (4 x^2 - 1) sin(1/x) + (1 - 18 x^2) cos(1/x))}{x^2}$$
 
 ### Self-Evaluation
 
+My approach was more graphically driven than the solution, nonetheless the answers agree.
+
 ## Problem 5.3.2
 
 ### Original Solution
@@ -63,6 +65,8 @@ $\therefore f$ is one-one.
 As an example of the converse not being true, consider $f = x^3$ we know $x^3$ is one to one, as it is monotonic, however $f' = x^2 = 0$ for $x = 0$.
 
 ### Self-Evaluation
+
+My reasoning for why f is one-one takes a different approach but I believe is still valid.
 
 ## Problem 6.2.3
 
@@ -111,6 +115,8 @@ $[1, \infty) \forall x \in A, \lim h_n -> 1$ regardless of x.
 
 ### Self-Evaluation
 
+Looks like I did not have a strong grasp on this topic as my answers for both parts of this question are off.  My expressions for the limits of the function are incorrect, which lead to _Part C_ of each function not quite lining up with the solution.  I reviewed the solution and can now see how to evaluate the limits properly.
+
 ## Problem 6.3.3
 
 ### Original Solution
@@ -137,6 +143,10 @@ $f' = \lim f'_n$ when $x \neq 0$
 
 ### Self-Evaluation
 
+#### _Part A_
+
+For this question, I was on the right track.  The big difference between my answer and the solution is that I deferred to trying to apply the cauchy criterion, with the incorrect value, when I should have found the expression for the function at the given value for x in terms of n and then applied the criterion.
+
 ## Problem 6.4.3
 
 ### Original Solution
@@ -155,10 +165,11 @@ thus f converges uniformly and f is continuous.
 
 #### _Part B_
 
-Theorem 6.4.3 states that $\sum g'_n(x)$ must converge uniformly.  In this case, $g'(x) = 2^n\sin(2^nx)$, which $\sum \sum^{\infty}_{n=0} \frac{1}{2^n}$ does not converge uniformly, as it is unbounded.  Thus g is not differentiable.
-
+Theorem 6.4.3 states that $\sum g'_n(x)$ must converge uniformly.  In this case, $g'(x) = 2^n\sin(2^nx)$, which $\sum^{\infty}_{n=0} \frac{1}{2^n}$ does not converge uniformly, as it is unbounded.  Thus g is not differentiable.
 
 ### Self-Evaluation
+
+No changes here other than removing an extra summation symbol from the solution.
 
 ## Problem 6.5.4
 
@@ -185,5 +196,13 @@ This one I struggled with, mainly for algebraic reasons.  I had trouble seeing h
 $\ln(1+x^2) = x^2 - \frac{x^4}{2} + \frac{x^6}{3} - \frac{x^8}{4} \ldots$
 
 ### Self-Evaluation
+
+#### _Part A_
+
+I somehow managed to get the first term of this series wrong, but the rest of the terms are correct.
+
+#### _Part B_
+
+I see that the key idea I was missing was executing term by term differentiation.
 
 ## External References
