@@ -34,7 +34,11 @@ Our group was tasked with studying Lebesgue's Criterion for Riemann Integration.
 
 Riemann integration provides us with a foundation to define integration, even if a function is not perfectly continuous.  However, Riemann integration does not cover all discontinuous functions, which may lead to the question, how discontinuous can a function be, and still maintain some form of integrability?  What other definitions of integration exist, and how do expand upon, Riemann integration?
 
-As shown in the book, Thomae's function and Dirichlet's function can provide some useful contrast for the scenario described above.  Observe that thomae's function, while certainly discontinuous one can construct the necessary conditions to show that it is indeed Riemann integrable (see Exercise 7.6.2).  Dirichlet's function does not fit the criteria, due to it being discontinuous at every point in its domain (as discussed in class).  Dirichlet's function is just an example, of many functions that fail to be Riemann integrable, so the need for a stronger form of integration is certainly justified.
+As shown in the book, Thomae's function and Dirichlet's function can provide some useful contrast for the scenario described above.  
+
+![Dirichlet](Dirichlet.png) ![Thomae](Thomae.png)
+
+Observe that thomae's function, while certainly discontinuous one can construct the necessary conditions to show that it is indeed Riemann integrable (see Exercise 7.6.2).  Dirichlet's function does not fit the criteria, due to it being discontinuous at every point in its domain (as discussed in class).  Dirichlet's function is just an example, of many functions that fail to be Riemann integrable, so the need for a stronger form of integration is certainly justified.
 
 ### Theory
 
@@ -510,7 +514,9 @@ as in 7.6.15 which is integrable on $[0,1]$ as it is discontinuous on $c$ with m
 
 ## External References
 
-Understand Analysis, Course Textbook
+Understand Analysis, Abott, Course Textbook
+
+Integration, McShane, Textbook
 
 Lebesgue Integration Video, https://youtu.be/PGPZ0P1PJfw
 
